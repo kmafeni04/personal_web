@@ -1,0 +1,6 @@
+.top-nav {
+  height: 5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 0 0 1px var(--font-color);
+  z-index: 1;
+}

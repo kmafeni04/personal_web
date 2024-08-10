@@ -1,0 +1,100 @@
+.portfolio__side-nav-container {
+  position: fixed;
+  top: 0vh;
+  left: 0;
+  height: 100svh;
+  z-index: 1;
+}
+
+.portfolio__side-nav-container:hover .side-nav,
+.portfolio__side-nav-container:focus-within .side-nav {
+  transform: translate(0);
+  transition: 0.75s;
+}
+
+.side-nav {
+  background-color: var(--bg-color);
+  transform: translate(-200px);
+  transition: 0.75s;
+}
+
+.side-nav__hover {
+  position: absolute;
+}
+
+.nav-btn {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.project {
+  position: relative;
+  border: solid 1px var(--font-color);
+  color: var(--font-color-inverse);
+  border-radius: 0.5rem;
+  width: min(25rem, 65vw);
+  overflow: clip;
+}
+
+.project__info {
+  scale: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--font-color);
+  transition: 0.5s;
+}
+
+.project:hover .project__info,
+.project:focus-within .project__info {
+  scale: 1;
+  transition: 0.5s;
+}
+
+.project__desc {
+  text-align: center;
+}
+
+.project__link {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: var(--font-color-inverse);
+  color: var(--font-color);
+  text-decoration: none;
+  border-radius: 100%;
+  transition: 0.25s;
+}
+
+.project__link:hover,
+.project__link:focus {
+  scale: 1.15;
+  transition: 0.25s;
+}
+
+.skills__skill {
+  width: 100%;
+  max-width: 20rem;
+  height: 15rem;
+  border: solid 1px var(--font-color);
+  border-radius: 0.75rem;
+  transition: 0.25s;
+}
+.skills__skill:hover {
+  background-color: var(--font-color);
+  color: var(--font-color-inverse);
+  transition: 0.25s;
+}
+
+.skills__skill .skill__icon {
+  font-size: 6rem;
+}
+
+.contact__link {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
