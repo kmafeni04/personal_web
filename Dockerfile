@@ -11,8 +11,6 @@ RUN luarocks install tableshape
 
 COPY . .
 
-RUN lapis migrate production
-
 EXPOSE 80
 
 CMD ["lapis", "server", "production"]
