@@ -87,7 +87,7 @@ return Widget:extend(function(self)
         h2({ class = "portfolio__title" }, "Contact me")
         form(
           {
-            action = "https://formsubmit.co/komemafeni944@gmail.com",
+            action = "https://formsubmit.co/50591954aa314ec2381210ec7162062f",
             method = "POST",
             class = "contact__form flex-col-center gap-s"
           },
@@ -97,7 +97,7 @@ return Widget:extend(function(self)
               input({ class = "input flex-basis-50", name = "email", placeholder = "Email", type = "email", required = true })
             end)
             textarea({ class = "contact__message input width-100", name = "message", placeholder = "Your Message...", required = true })
-            input({ type = "hidden", name = "_next", value = self:build_url("portfolio") })
+            input({ type = "hidden", name = "_next", value = self:build_url(self:url_for("dev_portfolio")) })
             input({ type = "hidden", name = "_replyto" })
             input({ type = "hidden", name = "_subject", value = "Dev Contact" })
             input({ type = "text", name = "_honey", style = "display:none" })
