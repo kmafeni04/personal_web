@@ -12,17 +12,13 @@
   transition: 0.75s;
 }
 
-.side-nav {
+.portfolio .side-nav {
   background-color: var(--bg-color);
   transform: translate(-200px);
   transition: 0.75s;
 }
 
-.side-nav__hover {
-  position: absolute;
-}
-
-.nav-btn {
+.portfolio .nav-btn {
   padding: 0.5rem;
   font-size: 1rem;
   background: none;
@@ -30,16 +26,67 @@
   border-radius: 0.25rem;
 }
 
-.project {
+.portfolio .nav-btn:hover,
+.portfolio .nav-btn:focus {
+  background-color: var(--font-color);
+}
+
+.portfolio__title {
+  font-size: 2.5rem;
+}
+
+.portfolio__subtitle {
+  font-size: 1.5rem;
+}
+
+.portfolio .welcome__wave {
+  display: inline-block;
+  animation: wave 2s infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    scale: 1.2;
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    scale: 1;
+    transform: rotate(0deg);
+  }
+}
+
+.portfolio .welcome__image {
+  filter: grayscale(100%);
+}
+
+.portfolio .project {
   position: relative;
   border: solid 1px var(--font-color);
   color: var(--font-color-inverse);
   border-radius: 0.5rem;
-  width: min(25rem, 65vw);
+  width: min(25rem, 82.5vw);
   overflow: clip;
 }
 
-.project__info {
+.portfolio .project__info {
   scale: 0;
   position: absolute;
   top: 0;
@@ -49,17 +96,17 @@
   transition: 0.5s;
 }
 
-.project:hover .project__info,
-.project:focus-within .project__info {
+.portfolio .project:hover .project__info,
+.portfolio .project:focus-within .project__info {
   scale: 1;
   transition: 0.5s;
 }
 
-.project__desc {
+.portfolio .project__desc {
   text-align: center;
 }
 
-.project__link {
+.portfolio .project__link {
   font-size: 1.5rem;
   padding: 0.5rem;
   background-color: var(--font-color-inverse);
@@ -69,13 +116,13 @@
   transition: 0.25s;
 }
 
-.project__link:hover,
-.project__link:focus {
+.portfolio .project__link:hover,
+.portfolio .project__link:focus {
   scale: 1.15;
   transition: 0.25s;
 }
 
-.skills__skill {
+.portfolio .skills__skill {
   width: 100%;
   max-width: 20rem;
   height: 15rem;
@@ -83,17 +130,22 @@
   border-radius: 0.75rem;
   transition: 0.25s;
 }
-.skills__skill:hover {
+.portfolio .skills__skill:hover {
   background-color: var(--font-color);
   color: var(--font-color-inverse);
   transition: 0.25s;
 }
 
-.skills__skill .skill__icon {
+.portfolio .skill__icon {
   font-size: 6rem;
 }
 
-.contact__link {
+.portfolio .contact__message {
+  resize: none;
+  height: 25vh;
+}
+
+.portfolio .contact__link {
   padding: 0.5rem;
   border-radius: 0.25rem;
   text-decoration: none;

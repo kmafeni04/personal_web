@@ -4,3 +4,32 @@
   box-shadow: 0 0 0 1px var(--font-color);
   z-index: 1;
 }
+
+.to-top {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  position: fixed;
+  right: 3vw;
+  bottom: 4vh;
+  z-index: 1;
+  animation: disappear;
+  animation-timeline: scroll();
+}
+
+@keyframes disappear {
+  0% {
+    scale: 0;
+  }
+  20% {
+    scale: 0;
+  }
+  30% {
+    scale: 1;
+  }
+}
+
+.to-top:hover,
+.to-top:focus {
+  box-shadow: 0 0 5px 3px var(--font-color);
+}

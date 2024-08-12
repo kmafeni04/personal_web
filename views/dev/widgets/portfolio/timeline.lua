@@ -3,7 +3,7 @@ local Widget = require("lapis.html").Widget
 
 local TimelineItem = Widget:extend(function(self)
   div({ class = "timeline-itme grid gap-xs" }, function()
-    h3(self.title)
+    h3({ class = "portfolio__subtitle" }, self.title)
     h4(self.company)
     p(self.duration)
     p(self.main_content)
@@ -39,5 +39,4 @@ return Widget:extend(function(self)
     main_content =
     "Working with HTML and CSS, performed a refresher in house course to ensure I still understood the basic concepts of web design.Learnt about Tailwind CSS and how to use it to improve development pace. Created a commissioned dashboard using react and tailwind "
   }))
-  div(self.child)
 end)

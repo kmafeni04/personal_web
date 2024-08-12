@@ -5,6 +5,63 @@
   --border-radius-large: 4rem;
 }
 
+.bold {
+  font-weight: 700;
+}
+
+.input {
+  background-color: transparent;
+  border: solid 1px var(--font-color);
+  border-radius: var(--border-radius-extra-small);
+  padding: 0.5rem 0.75rem;
+}
+
+.input[data-inverse] {
+  background-color: var(--font-color);
+  color: var(--font-color-inverse);
+}
+
+.btn {
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.btn[data-fit] {
+  width: fit-content;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.btn[data-clicked] {
+  background-color: var(--font-color);
+  color: var(--font-color-inverse);
+}
+.btn-fit[data-clicked] {
+  background-color: var(--font-color);
+  color: var(--font-color-inverse);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--font-color);
+  color: var(--font-color-inverse);
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+  border: none;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+  box-shadow: 0 0 5px 1px red;
+}
+
 .visible {
   display: block;
 }
@@ -124,6 +181,26 @@
 
 .sticky {
   position: sticky;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
 }
 
 .gap-xs {
@@ -263,57 +340,4 @@
 }
 .radius-max {
   border-radius: 9999px;
-}
-
-.input {
-  background-color: transparent;
-  border: solid 1px var(--font-color);
-  border-radius: var(--border-radius-extra-small);
-  padding: 0.5rem 0.75rem;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.btn {
-  font-weight: 700;
-  transition: 0.2s;
-}
-.btn-fit {
-  font-weight: 700;
-  transition: 0.2s;
-  width: fit-content;
-}
-
-.no-decoration {
-  text-decoration: none;
-}
-
-.btn[data-clicked] {
-  background-color: var(--font-color);
-  color: var(--font-color-inverse);
-}
-.btn-fit[data-clicked] {
-  background-color: var(--font-color);
-  color: var(--font-color-inverse);
-}
-
-.btn:hover,
-.btn:focus {
-  background-color: var(--font-color);
-  color: var(--font-color-inverse);
-}
-
-.btn-danger {
-  background-color: red;
-  color: white;
-  border: none;
-  font-weight: 700;
-  transition: 0.2s;
-}
-
-.btn-danger:hover,
-.btn-danger:focus {
-  box-shadow: 0 0 5px 1px red;
 }

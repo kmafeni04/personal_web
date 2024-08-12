@@ -5,7 +5,7 @@ local Project = Widget:extend(function(self)
   div({ class = "project" }, function()
     image({ src = self.image_url, class = "project__image" })
     div({ class = "project__info flex-col-center gap-xs" }, function()
-      h3(self.title)
+      h3({ class = "portfolio__subtitle" }, self.title)
       p({ class = "project__desc" }, self.desc)
       div({ class = "project__links flex-center gap-xs" }, function()
         if self.git_link then
@@ -28,7 +28,7 @@ return Widget:extend(function(self)
     image_url = "/static/assets/portfolio.png",
     title = "Portfolio",
     desc = "A responsive and minimally designed website highlighting my dev experiences and talents",
-    git_link = nil,
+    git_link = "https://github.com/kmafeni04/personal_web",
     web_link = nil
   }))
   widget(Project({
